@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        body{
+            /*font-family: 'Courier New', Courier, monospace;  /*'Courier New'quando mais de uma palavra, uso '' */
+            font-family: Arial, Helvetica, sans-serif;   /* safe combination, no caso de não achar uma fonte    */
+            /* TAMANHO DA FONTE
+            Medidas Absolutas
+            px (oficial W3C) ; náo usar: cm, mm, in, pt, pc
+            Medidas Relativas
+            em (oficial W3C) ; não usar: rem, ex, vw, vh, %    
+            16px geralmente = 1em       
+            existem telas (retina) que o tamnho do px é ligeiramente diferente
+            */
+            font-size: 20px;    /*padrão: 16px */
+            font-size: 1.5em;   /* em é referente ao tamanho natural (16px); 
+                                rem é relativo ao tamanho root (definido na familia)*/
+        }
+        h1{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-weight: bold;
+            font-style: italic;
+            text-decoration: underline;
+        }
+        h2{ /*
+            font-family: monospace;
+            font-size: 1.5em;
+            font-weight: bold;
+            font-style: italic; 
+            */
+
+            /* shorthand font
+            ORDEM- font-style  font-weight font-size font-family */
+            font: italic bold 2em monospace;
+        }
+        .textinho{
+            font: lighter 1.3em cursive;   /* no shorthand não preciso citar todos os parâmetros */
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Trabalhando com Fontes</h1>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo aperiam accusantium quaerat accusamus voluptatibus harum at ipsa, fugiat optio nesciunt amet culpa facere nam rerum! Repudiandae nostrum eaque inventore harum.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore exercitationem expedita unde officia repudiandae obcaecati id itaque libero iure, quis deleniti suscipit soluta esse. Sequi ea nostrum assumenda modi in!</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim architecto sit ea laborum quibusdam nesciunt iusto ab culpa quasi ad commodi veniam, perferendis illo, consectetur reprehenderit, inventore magni ipsa! Ducimus.</p>
+
+    <h2>Subtítulo 1</h2>
+    <p class="textinho">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi inventore officiis dolore similique iste minima, tempora quisquam nihil praesentium laborum vitae optio enim architecto provident? Eius magnam molestias odit alias?</p>
+    
+</body>
+</html>

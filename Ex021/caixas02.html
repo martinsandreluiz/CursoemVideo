@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            background-color: lightgray;
+            margin: 0%;
+            
+        }
+        header {
+            background-color: lightgreen;
+            color: white;
+            padding: 10px;
+            margin:10px;
+        }
+
+        header > h1 {
+            font: italic bolder 4em serif;
+        }
+        
+        nav {
+            background-color: lightcoral;
+            padding: 3px;
+            text-align: right;
+
+        }
+        nav > a {
+            color: #ffffff;            
+            text-decoration: none;
+            font: bold 1.3em cursive;
+            margin-right: 10px;    
+            box-shadow: 3px 3px 4px 1px rgba(0, 0, 0, 0.384);      /* cor black com transparencia*/
+            /* box-shadow: right(- left) bottom(- top) blur spread color */       
+            /* box-shadow: inset /* para sombras internas*/           
+            
+        }
+        nav> a:hover {
+            text-decoration: underline;
+            color: darkblue;
+        }
+        main {
+            background-color: pink;
+            padding: 20px;
+            margin: 10px;
+            text-align: justify;
+            border-radius: 10px 20px 30px 40px;  /*top-left top-right bottom-right bottom-left*/
+            border-radius: 0px 70px;    /*dois valores --  top-left/bottom-right   top-right/bottom-left*/
+            box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.377);
+        }
+        
+        article {
+            background-color: beige;            
+            padding: 5px;
+        }
+        #brasil {
+            box-shadow: inset 2px 2px 5px 2px black ;
+        }
+        article > aside {
+            background-color: rgb(143, 143, 130) ;
+            font-size: 0.7em;
+
+        }
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 1px;
+            margin: 0%;
+
+        }
+        footer > p {
+            margin: 0px;
+        }
+        div#circunferencia {
+            height: 100px;
+            width: 100px;
+            margin: 20px auto;
+            color: black;
+            background-color: red;
+            border-radius: 50%;
+            
+        }
+
+    </style>
+</head>
+<body>                                  <!-- <header>    
+                                                <h1>-<h6>
+                                                <nav>  
+                                                    <a>                                         
+                                             <main>
+                                                 <h1>-<h6>
+                                                 <section>
+                                                     <p>, <article>
+                                                         <aside>
+                                             <footer>
+                                                 <div>
+                                                     <p>, etc           -->
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">link1</a>
+            <a href="">link2</a>
+            <a href="">link3</a>
+            
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos"></section>
+        <p>Esportes Política Tecnologia</p>
+        <section id="noticias">     <!--<article> dentro de <section> ou o contrário tb-->
+            <article>
+                <h2 id="brasil">Noticias sobre o Brasil</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo iure placeat eligendi amet officia eaque, ratione, expedita velit autem a asperiores accusantium facere, quo molestiae ad blanditiis tenetur! Consequuntur, quam.</p>
+                <aside>Artigo escrito por Fulano da Silva</aside>
+            </article>
+            <article></article>
+        </section>
+
+
+    </main>  
+    <footer>
+        <p>Desenvolvido por CursoemVideo</p>
+    </footer>    
+    <div id="circunferencia"></div>
+                                <!-- <div></div>
+                                <span></span> -->
+</body>
+</html>

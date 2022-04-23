@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+/* 
+Uso #nome (CSS) para id="nome" (HTML) - id único na página (não posso repetir)
+uso .nome (CSS) para class="nome" (HTML) - posso repetir, ou seja, usar a mesma class para vários elementos 
+*/
+
+
+body {
+    background-color: rgba(230, 245, 207, 0.61);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#principal {
+    font: bold 2.5em serif;
+    background-color: rgb(158, 167, 146);
+    color: white;
+    text-align: center;
+}
+
+h1 {
+    color: darkgreen;
+}
+
+h2 {
+    color: rgb(100, 0, 0);
+}
+h1#secundario {
+    color: rgb(0, 0, 0);
+    font-size: 5em;
+}
+h2.basico {
+        color: rgb(100, 0, 42);
+    font-weight: bold;
+}
+.intermediario {
+    color: rgb(0, 47, 100);
+    font-weight: bold;
+}.avancado {
+    color: rgb(100, 68, 0);
+    font-weight: bold;
+}
+.destaque {
+    background-color: hsla(60, 100%, 40%, 0.774);
+}

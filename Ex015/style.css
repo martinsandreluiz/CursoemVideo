@@ -1,0 +1,26 @@
+@charset "UTF-8";
+/* não obrigatório, mas pode resolver eventuais problemas de linguagem */
+
+body{
+    background-color: rgb(203, 240, 206);
+    color:brown ;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+}
+h1{
+    color: blue;
+    font-size: 3em;
+    background-color: greenyellow;
+    text-align: center;
+}
+
+h2{
+    color: blueviolet;
+    font-size: 2em;
+}
+
+p{
+    font-size: 0.8em;
+    text-align: justify;
+}   
+   

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes Externas</title>
+    <style>
+        @font-face {
+            font-family: 'jedi1';
+            src: url('fonts/Starjhol.ttf') format('truetype');
+        }
+        @font-face {
+            font-family: 'jedi2';
+            src: url('./fonts/Starjedi.ttf') format('truetype');
+        }
+
+        /* TIPOS DE format()
+            - opentype (otf)
+            - truetype (ttf)
+            - embedded opentype
+            - truetype-aat (Apple Advanced Typography)
+            - svg  
+        */
+        body {
+            font: italic bold 1.5em serif;
+        }
+        h1 {
+            font: bolder 3em 'jedi1';
+        }
+        h2 {
+            font: lighter 2em 'jedi2';
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Fontes Externas</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores ipsum cum nostrum, voluptas at magnam voluptatum officiis rem commodi sapiente impedit expedita similique id nam vel enim laboriosam ab obcaecati.</p>
+    <h2>Subtítulo</h2>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque vitae repudiandae necessitatibus aliquam accusamus! Repellat recusandae numquam doloremque. Quo, totam illum. Ipsam corporis ipsum qui culpa. Doloribus suscipit tenetur veritatis.</p>
+    
+</body>
+</html>

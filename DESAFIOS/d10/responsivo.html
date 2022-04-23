@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de responsividade</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            background-color: gray;
+        }
+
+        main {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+
+            min-width: 280px;   /* 320px é largura de celulares mais antigos*/
+            max-width: 800px;
+            margin: auto;   
+            /*centraliza o conteúdo, independente do tamanho da tela. Mas se muito pequeno, dá rolagem lateral.           /* Naõ funciona para a imagem*/
+            /*existem outras tecnicas melhores: flex box, pex.*/
+        }
+        img {
+            width: 100%;        /*agora tamanho da imagem se ajusta ao tamanho da tela (320px a 800px)*/
+        }
+    </style>
+</head>
+<body>
+    <main>      <!--extensão google window resizer-->
+        <h1>Criando um site responsivo</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, commodi fuga nam quae dolor non eaque. Totam molestiae omnis, aliquam, tempore assumenda mollitia officiis consequatur et facere dignissimos fuga pariatur?Lorem ipsum dolor sit amet consectetur adipisicing elit. A soluta, incidunt aliquid quod, error numquam possimus consequuntur temporibus voluptas obcaecati reiciendis? At cum incidunt tempora, laudantium vero labore quae quam?Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio tenetur voluptas modi ea quia nihil nulla expedita odit et, iure reiciendis adipisci rerum fuga. Similique expedita quisquam delectus accusamus nulla?</p>
+        <picture>
+            <source media="(max-width: 500px)" srcset="imagens/irina-blok-pq.jpg">
+            <img src="imagens/irina-blok.jpg" alt="Irina Blok"></picture>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, commodi fuga nam quae dolor non eaque. Totam molestiae omnis, aliquam, tempore assumenda mollitia officiis consequatur et facere dignissimos fuga pariatur?Lorem ipsum dolor sit amet consectetur adipisicing elit. A soluta, incidunt aliquid quod, error numquam possimus consequuntur temporibus voluptas obcaecati reiciendis? At cum incidunt tempora, laudantium vero labore quae quam?Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio tenetur voluptas modi ea quia nihil nulla expedita odit et, iure reiciendis adipisci rerum fuga. Similique expedita quisquam delectus accusamus nulla?</p>
+    </main>
+    
+</body>
+</html>

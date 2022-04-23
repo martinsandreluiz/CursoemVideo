@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-classes</title>
+    <style>
+        div {
+            display: inline-block;      /*modifico o display porque, por default, a <div> é block */
+            background-color: lightgrey;
+            text-align: center;
+            border: 1px solid black;   /*shorthand para border */
+            height: 200px;
+            width: 200px;
+        }
+        #d1 {
+            background-color: lightskyblue;
+        }
+        /* pseudo classe se refere a um estado de um determinado elemento; 
+            é relacionada a um elemento ou a uma classe;
+         não se sobrepõe a um id, mas se sobrepõe a uma class*/
+        div:hover {                          /*pseudo-class hover - passando o mouse sobre*/
+            background-color: yellow;    /*funcionou pra div 2 e 3 (se sobrepõe à class) mas não pra div 1 (identificada por #d1) */
+        }
+        .div3 {
+            background-color: blueviolet;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="d1">01</div>
+    <div id="d2">02</div>
+    <div class="div3">03</div>
+    
+</body>
+</html>

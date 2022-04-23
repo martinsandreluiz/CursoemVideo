@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        h1 {        /* elemento tipo block level*/
+            background-color: lightgrey;
+            height: 111px;
+            width: 148px;
+            border: 10px solid darkgreen;    /* shorthand com dimensões de valor único*/
+            /*border style: solid, dashed, dotted, doubled, groove, ridge, none*/
+
+            /* padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px; */
+
+        /*  padding: 10px;      /* shorthand de valor único para as 4 direções*/
+
+            padding: 10px 20px; /* shorthand com 2 valores - top/bottom   right/left*/
+
+        /*  margin-top: 20px;
+            margin-right: 20px;
+            margin-bottom: 40px;
+            margin-left: 20px; */
+        /*  margin: 20px 20px 40px 20px; /* shorthand - top right bottom left*/
+        /*  margin: auto;   /* centraliza horizontalmente a caixa na tela*/
+            margin: 20px auto 40px auto;    /* centraliza margens direita e esquerda*/
+
+         
+
+        /*  outline-width: 5px;
+            outline-style: dashed;
+            outline-color: violet; */
+            outline: 5px dashed violet;
+            
+        }
+        p {
+            background-color: lightgoldenrodyellow;
+            color:brown;
+            height: 100px;
+            border: 15px groove orangered;
+            text-align: center;
+        }
+        a {         /*elemento tipo inline level*/
+            display: block; /*mas posso alterar para display block-level*/
+            background-color: lightcyan;
+            border: 3px dotted rgb(87, 177, 238);
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa block-level</h1>
+    <p>Parágrafos são também exemplos de block-level mas os <a href="#" >links são exemplos de caixas inline-level</a>Vamos ver como tudo isso funciona</p>
+    
+</body>
+</html>
