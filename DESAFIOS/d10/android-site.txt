@@ -1,3 +1,4 @@
+[TEXTO]
 Curiosidades de Tecnologia
 
 Tudo aquilo que você sempre quis saber sobre o mundo Tech, em um único lugar
@@ -6,7 +7,7 @@ Tudo aquilo que você sempre quis saber sobre o mundo Tech, em um único lugar
 Home
 Notícias
 Curiosidades
-Fale Conosco
+Entre em Contato
 
 História do Mascote do Android
 
